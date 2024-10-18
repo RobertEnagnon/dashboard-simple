@@ -38,7 +38,7 @@ body {
 }
 
 .menu li {
-    padding: 15px; /* Espacement interne */
+    padding: 5px; /* Espacement interne */
 }
 
 .menu a {
@@ -47,11 +47,13 @@ body {
     display: flex; /* Utilisation de Flexbox pour aligner les icônes et le texte */
     align-items: center; /* Alignement vertical centré */
     transition: background 0.3s; /* Animation pour l'arrière-plan */
+    padding: 10px;
 }
 
 /* Changement de couleur au survol */
 .menu a:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Couleur d'arrière-plan au survol */
+    /* padding: 10px; */
 }
 
 /* Icônes dans le menu */
@@ -114,6 +116,13 @@ body {
     display: flex; 
     flex-direction: column;
     /* align-items: center;  */
+    transition: all 0.3s ease;
+}
+.stat-card:hover{
+    box-shadow: 0 2px 10px rgba(0, 0,0,0.2);
+    background: #3498db;
+    color: #fff;
+    cursor: pointer;
 }
 
 /* Icône dans la carte de statistiques */
@@ -164,7 +173,7 @@ td {
 .btn:hover {
     background-color: #2980b9; /* Changement de couleur au survol */
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .sidebar.active {
         transform: translateX(-80%);
     }
@@ -173,7 +182,7 @@ td {
 /* Style mobile */
 @media (max-width: 768px) {
     .sidebar {
-        transform: translateX(-80%); /* Cacher la barre latérale */
+        transform: translateX(-100%); /* Cacher la barre latérale */
         position: absolute; /* Positionnement absolu */
         height: 100%; /* Hauteur à 100% */
         z-index: 100; /* S'assurer que la barre latérale soit au-dessus */
