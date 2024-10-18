@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de Bord Avancé</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar"> <!-- Barre latérale -->
+            <div class="sidebar-header"> <!-- En-tête de la barre latérale -->
+                <h2>Mon Tableau de Bord</h2>
+                <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button> <!-- Bouton hamburger -->
+            </div>
+            <nav class="menu"> <!-- Navigation -->
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Statistiques</a></li>
+                    <li><a href="#"><i class="fas fa-table"></i> Tableaux</a></li>
+                    <li><a href="#"><i class="fas fa-file-alt"></i> Rapports</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Paramètres</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Profil</a></li>
+                    <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content"> <!-- Contenu principal -->
+            <header class="header"> <!-- En-tête du contenu principal -->
+                <div class="search-bar"> <!-- Barre de recherche -->
+                    <input type="text" placeholder="Rechercher..." id="searchInput">
+                    <button type="button" id="searchBtn"><i class="fas fa-search"></i></button> <!-- Bouton de recherche -->
+                </div>
+            </header>
+            <section class="statistics"> <!-- Section des statistiques -->
+                <div class="stat-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Chiffre d'Affaires</h3>
+                    <p>€ 20,000</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Visites</h3>
+                    <p>1,500</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Produits Vendus</h3>
+                    <p>300</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Taux de Conversion</h3>
+                    <p>5%</p>
+                </div>
+            </section>
+            <section class="table-section"> <!-- Section du tableau -->
+                <h2>Liste des Produits</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom du Produit</th>
+                            <th>Prix</th>
+                            <th>Quantité</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Produit 1</td>
+                            <td>€ 10</td>
+                            <td>50</td>
+                            <td><button class="btn">Modifier</button><button class="btn">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>Produit 2</td>
+                            <td>€ 15</td>
+                            <td>30</td>
+                            <td><button class="btn">Modifier</button><button class="btn">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>Produit 3</td>
+                            <td>€ 25</td>
+                            <td>10</td>
+                            <td><button class="btn">Modifier</button><button class="btn">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>Produit 3</td>
+                            <td>€ 25</td>
+                            <td>10</td>
+                            <td><button class="btn">Modifier</button><button class="btn">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>Produit 3</td>
+                            <td>€ 25</td>
+                            <td>10</td>
+                            <td><button class="btn">Modifier</button><button class="btn">Supprimer</button></td>
+                        </tr>
+                        <tr>
+                            <td>Produit 3</td>
+                            <td>€ 25</td>
+                            <td>10</td>
+                            <td><button class="btn">Modifier</button><button class="btn">Supprimer</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
+</body>
+</html>
